@@ -1,0 +1,1 @@
+behaviour.elastic           Integrate Elasticsearch into your model, define the index/type in this option. eg geo/locations

@@ -1,0 +1,9 @@
+{
+    "dependencies": [
+        {
+            "interfaces": "ride\\library\\orm\\model\\behaviour\\initializer\\BehaviourInitializer",
+            "class": "ride\\application\\orm\\model\\behaviour\\initializer\\ElasticBehaviourInitializer",
+            "id": "elastic"
+        }
+    ]
+}
