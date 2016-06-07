@@ -1,0 +1,1 @@
+elastic.omit        Ignore this field when integrating with Elastic search

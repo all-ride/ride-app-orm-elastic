@@ -1,0 +1,20 @@
+{
+    "orm.insert.post": [
+        {
+            "interface": "ride\\application\\orm\\elastic\\ElasticEventListener",
+            "method": "handleOrmAction"
+        }
+    ],
+    "orm.update.post": [
+        {
+            "interface": "ride\\application\\orm\\elastic\\ElasticEventListener",
+            "method": "handleOrmAction"
+        }
+    ],
+    "orm.delete.post": [
+        {
+            "interface": "ride\\application\\orm\\elastic\\ElasticEventListener",
+            "method": "handleOrmAction"
+        }
+    ]
+}
