@@ -1,0 +1,23 @@
+{
+    "name": "ride/app-orm-elastic",
+    "description": "Elastic search integration for the Ride ORM.",
+    "version": "0.1.1",
+    "authors": [
+        {
+            "name": "Joris Vandeweerd",
+            "email": "joris@statik.be"
+        }
+    ],
+    "require": {
+        "ride/app-orm": ">=0.8.0",
+        "ride/app-elastic": ">=0.1.0",
+        "ride/lib-event": ">=0.1.0",
+        "ride/lib-generator": ">=0.1.0",
+        "ride/lib-orm": ">=0.12.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "ride\\application\\orm\\": ["src/"]
+        }
+    }
+}
