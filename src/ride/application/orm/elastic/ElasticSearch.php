@@ -3,6 +3,7 @@
 namespace ride\application\orm\elastic;
 
 use ride\library\orm\model\Model;
+use ride\library\orm\query\ModelQuery;
 
 /**
  * Search of entries in Elasticsearch
