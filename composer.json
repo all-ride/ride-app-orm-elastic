@@ -1,7 +1,7 @@
 {
     "name": "ride/app-orm-elastic",
     "description": "Elastic search integration for the Ride ORM.",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "authors": [
         {
             "name": "Joris Vandeweerd",
