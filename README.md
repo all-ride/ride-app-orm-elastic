@@ -5,7 +5,7 @@ This module will integrate Elasticsearch into the ORM.
 To enable Elastic on your model, add the _behaviour.elastic_ property to your model options.
 Set it to the _index/type_ of your data in the Elasticsearch server eg. geo/locations.
 
-When this behaviour is enabled, a method getElasticDocument will be generated in your entry class.
+When this behaviour is enabled, a method _getElasticDocument_ will be generated in your entry class.
 This method will make the conversion between the ORM and Elastic.
 
 The mapping to Elastic is based on your model definition. 
@@ -33,4 +33,22 @@ _Note: when you enable the json API, you can add the elastic filter to add searc
     <option name="json.api" value="geo-locations"/>
     <option name="json.api.filters" value="query,exact,match,expression,elastic"/>
 </model>
+```
+
+## Related Modules 
+
+- [ride/app](https://github.com/all-ride/ride-app)
+- [ride/app-elastic](https://github.com/all-ride/ride-app-elastic)
+- [ride/app-orm](https://github.com/all-ride/ride-app-orm)
+- [ride/cli-orm-elastic](https://github.com/all-ride/ride-cli-orm-elastic)
+- [ride/lib-event](https://github.com/all-ride/ride-lib-event)
+- [ride/lib-generator](https://github.com/all-ride/ride-lib-generator)
+- [ride/lib-orm](https://github.com/all-ride/ride-lib-orm)
+
+## Installation
+
+You can use [Composer](http://getcomposer.org) to install this application.
+
+```
+composer require ride/app-orm-elastic
 ```
