@@ -11,6 +11,22 @@ use ride\library\orm\query\ModelQuery;
 class ElasticSearch extends AbstractElastic {
 
     /**
+     * Escapes the reserved query characters in the provided string. The
+     * reserved characters are: + - = && || > < ! ( ) { } [ ] ^ " ~ * ? : \ /
+     * @param string $string String to escape
+     * @return string Provided string with the reserved characters escaped
+     * @see https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html
+     */
+    public function escapeReservedChars($string) {
+        $chars = array('\\', '+', '-', '&&', '||', '!', '(', ')', '{', '}', '[', ']', '^', '"', '~', '*', '?', ':');
+        foreach ($chars as $char) {
+            $string = str_replace($char, '\\' . $char, $string);
+        }
+
+        return $string;
+    }
+
+    /**
      * Search for model entries with the provided options
      * @param \ride\library\orm\model\Model $model Model to look for
      * @param array $options Array with search options
